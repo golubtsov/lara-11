@@ -9,7 +9,7 @@ class Application extends LaravelApplication
     /**
      * Get the path to the application "app" directory.
      *
-     * @param  string  $path
+     * @param string $path
      * @return string
      */
     public function path($path = ''): string
