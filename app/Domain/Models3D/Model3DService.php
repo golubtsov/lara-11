@@ -4,7 +4,6 @@ namespace Domain\Models3D;
 
 use App\Services\AbstractBaseService;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Http\FormRequest;
 
 class Model3DService extends AbstractBaseService
 {
@@ -13,9 +12,24 @@ class Model3DService extends AbstractBaseService
         $this->model = new Model3D();
     }
 
-    public function storeWithFile(FormRequest $request, string $attribute): Model
+    public function delete(int $id)
     {
-        $file = $request->file($attribute);
+        $model = $this->model::query()->findOrFail($id);
+
+        if (
+            $model->file->path
+            && file_exists(storage_path() . '/app/public/' . $model->file->path)
+        ) {
+            unlink(storage_path() . '/app/public/' . $model->file->path);
+            $model->file->delete();
+        }
+
+        return $model->delete();
+    }
+
+    public function storeWithFile(array $data, string $field): Model
+    {
+        $file = $data[$field];
         $fileName = uniqid() . '.' . $file->getClientOriginalExtension();
         $fileOriginalName = $file->getClientOriginalName();
         $path = $file->storeAs('models', $fileName, 'public');
