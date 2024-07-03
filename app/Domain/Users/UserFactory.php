@@ -1,13 +1,15 @@
 <?php
 
-namespace Database\Factories;
+namespace Domain\Users;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use App\Database\BaseFactory;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 
-class UserFactory extends Factory
+class UserFactory extends BaseFactory
 {
+    protected $model = User::class;
+
     public function definition(): array
     {
         return [
