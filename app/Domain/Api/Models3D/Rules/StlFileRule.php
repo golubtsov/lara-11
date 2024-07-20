@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Models3D\Rules;
+namespace Domain\Api\Models3D\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Http\UploadedFile;

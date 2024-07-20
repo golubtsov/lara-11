@@ -1,8 +1,8 @@
 <?php
 
-namespace Domain\Files\Resources;
+namespace Domain\Api\Files\Resources;
 
-use Domain\Files\File;
+use Domain\Api\Files\File;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 

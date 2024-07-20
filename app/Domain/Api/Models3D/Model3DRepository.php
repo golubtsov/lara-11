@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Models3D;
+namespace Domain\Api\Models3D;
 
 use App\Repositories\AbstractBaseRepository;
 use Illuminate\Database\Eloquent\Model;

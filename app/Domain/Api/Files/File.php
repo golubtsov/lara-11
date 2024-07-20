@@ -1,13 +1,13 @@
 <?php
 
-namespace Domain\Files;
+namespace Domain\Api\Files;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 
 /**
- *
+ * 
  *
  * @property int $id
  * @property string $path

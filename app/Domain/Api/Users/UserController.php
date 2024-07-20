@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Users;
+namespace Domain\Api\Users;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Collection;

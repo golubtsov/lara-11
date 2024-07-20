@@ -1,13 +1,13 @@
 <?php
 
-namespace Domain\Models3D;
+namespace Domain\Api\Models3D;
 
 use App\Http\Controllers\Controller;
-use Domain\Models3D\Requests\ShowModel3DRequest;
-use Domain\Models3D\Requests\StoreModel3DRequest;
-use Domain\Models3D\Requests\UpdateModel3DRequest;
-use Domain\Models3D\Resources\IndexModel3DResource;
-use Domain\Models3D\Resources\ShowModel3DResource;
+use Domain\Api\Models3D\Requests\ShowModel3DRequest;
+use Domain\Api\Models3D\Requests\StoreModel3DRequest;
+use Domain\Api\Models3D\Requests\UpdateModel3DRequest;
+use Domain\Api\Models3D\Resources\IndexModel3DResource;
+use Domain\Api\Models3D\Resources\ShowModel3DResource;
 
 class Model3DController extends Controller
 {

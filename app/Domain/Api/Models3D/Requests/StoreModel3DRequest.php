@@ -1,9 +1,9 @@
 <?php
 
-namespace Domain\Models3D\Requests;
+namespace Domain\Api\Models3D\Requests;
 
+use Domain\Api\Models3D\Rules\StlFileRule;
 use Illuminate\Foundation\Http\FormRequest;
-use Domain\Models3D\Rules\StlFileRule;
 
 class StoreModel3DRequest extends FormRequest
 {
