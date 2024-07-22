@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Web\Dictonary\Languages;
+namespace Domain\Web\Dictionary\Languages;
 
 enum LanguagesEnum: int
 {
